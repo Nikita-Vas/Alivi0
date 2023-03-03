@@ -1,0 +1,143 @@
+// Fonts
+@import './../fonts/lato/stylesheet.css';
+@import './../fonts/georgia/stylesheet.css';
+
+// Reset file
+@import 'reset.scss';
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #292929;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Utility ==================================================================
+
+.none {
+  display: none !important;
+}
+
+.visually-hidden {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  display: block;
+  margin-left: -10000px;
+  background: transparent;
+  font-size: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 50px;
+  background-color: #01996d;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+  & a {
+    color: inherit;
+  }
+
+  &:hover {
+    background-color: #0ea847;
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.btn-small {
+  padding: 13px 50px;
+}
+
+.title {
+  font-family: 'Georgia', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.57;
+  color: #01996d;
+
+  @media (max-width: 1150px) {
+    font-size: 40px;
+  }
+}
+
+.title-white {
+  color: #fff;
+}
+
+// Content =======================================================
+
+.content {
+  max-width: 584px;
+  &__title {
+    margin-bottom: 33px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.57;
+    color: #ffffff;
+    margin-bottom: 57px;
+  }
+  &__text-black {
+    color: #292929;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+}
+
+//  Grid =======================================================================
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-big {
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// Header ========================================================================
+@import 'header.scss';
+
+// How ============================================================================
+@import 'how.scss';
+
+.main {
+}
+
+// Benefits =======================================================================
+
+@import 'benefits.scss';
+
+// Story ===========================================================================
+
+@import 'story.scss';
+
+// Product ========================================================================
+
+@import 'product.scss';
+
+//  Footer =======================================================
+
+@import 'footer.scss';

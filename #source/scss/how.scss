@@ -1,0 +1,47 @@
+.how {
+  padding: 169px 0 52px;
+
+  @media (max-width: 1150px) {
+    padding: 100px 0 52px;
+  }
+
+  &__inner {
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.57;
+
+    color: #424242;
+
+    @media (max-width: 1150px) {
+      text-align: center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 40px;
+
+    @media (max-width: 1150px) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    margin-right: 30px;
+    max-width: 584px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #424242;
+
+    max-width: 671px;
+  }
+}

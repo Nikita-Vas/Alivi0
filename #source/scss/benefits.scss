@@ -1,0 +1,136 @@
+.benefits {
+  padding: 135px 0 51px;
+
+  @media (max-width: 821px) {
+  }
+  &__columns {
+  }
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+
+  column-gap: 90px;
+
+  &__item {
+    // max-width: 390px;
+    flex: 0 1 calc(33.33% - 60px);
+
+    @media (max-width: 821px) {
+      flex-basis: calc(50% - 45px);
+    }
+
+    @media (max-width: 560px) {
+      flex-basis: 100%;
+    }
+    &-first {
+      position: relative;
+
+      & .columns__title:before {
+        content: '01';
+        font-family: 'Georgia';
+        font-size: 150px;
+
+        text-align: center;
+        color: rgba(1, 153, 109, 0.2);
+
+        position: absolute;
+        top: -132px;
+        left: 0;
+      }
+
+      & .columns__text {
+        margin-bottom: 60px;
+      }
+    }
+
+    &-second {
+      margin-top: 287px;
+
+      position: relative;
+
+      @media (max-width: 560px) {
+        margin-top: 120px;
+      }
+
+      & .columns__title:before {
+        content: '02';
+        font-family: 'Georgia';
+        font-size: 150px;
+
+        text-align: center;
+        color: rgba(1, 153, 109, 0.2);
+
+        position: absolute;
+        top: -132px;
+        left: 0;
+      }
+
+      & .columns__text {
+        margin-bottom: 37px;
+      }
+    }
+
+    &-third {
+      margin-top: 54px;
+      position: relative;
+
+      @media (max-width: 821px) {
+        margin-top: -83px;
+      }
+
+      @media (max-width: 560px) {
+        margin-top: 120px;
+      }
+
+      & .columns__title:before {
+        content: '03';
+        font-family: 'Georgia';
+        font-size: 150px;
+
+        text-align: center;
+        color: rgba(1, 153, 109, 0.2);
+
+        position: absolute;
+        top: -132px;
+        left: 0;
+      }
+
+      & .columns__text {
+        margin-bottom: 48px;
+      }
+    }
+  }
+
+  &__title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000000;
+
+    margin-bottom: 55px;
+  }
+
+  &__text {
+    font-weight: 500;
+  }
+
+  &__img {
+    padding-bottom: 126%;
+    position: relative;
+
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+}
